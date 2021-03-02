@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/yulia/Downloads/WalletApp/WalletApp/WalletApp.csproj": {}
+    "/Users/yulia/Documents/GitHub/WalletApp/WalletApp/WalletApp.csproj": {}
   },
   "projects": {
-    "/Users/yulia/Downloads/WalletApp/WalletApp/WalletApp.csproj": {
+    "/Users/yulia/Documents/GitHub/WalletApp/WalletApp/WalletApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/yulia/Downloads/WalletApp/WalletApp/WalletApp.csproj",
+        "projectUniqueName": "/Users/yulia/Documents/GitHub/WalletApp/WalletApp/WalletApp.csproj",
         "projectName": "WalletApp",
-        "projectPath": "/Users/yulia/Downloads/WalletApp/WalletApp/WalletApp.csproj",
+        "projectPath": "/Users/yulia/Documents/GitHub/WalletApp/WalletApp/WalletApp.csproj",
         "packagesPath": "/Users/yulia/.nuget/packages/",
-        "outputPath": "/Users/yulia/Downloads/WalletApp/WalletApp/obj/",
+        "outputPath": "/Users/yulia/Documents/GitHub/WalletApp/WalletApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/yulia/.config/NuGet/NuGet.Config"

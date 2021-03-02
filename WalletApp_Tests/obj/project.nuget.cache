@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wOIaO8A71G3uEv1pCfE8fRcv5GVM32A4SA79XIXvE0Q07J5cohANLbMnHG17zRshkd/kDzc+U3HszOF73dzrBg==",
+  "dgSpecHash": "we0snRkYdia5NMUgp0UDlwH9JVjmM6PRk1fwcwAkToNZV5W74/V6MVZAvHYLidFtCZq367tIDlZVGOGJ/6730A==",
   "success": true,
-  "projectFilePath": "/Users/yulia/Downloads/WalletApp/WalletApp_Tests/WalletApp_Tests.csproj",
+  "projectFilePath": "/Users/yulia/Documents/GitHub/WalletApp/WalletApp_Tests/WalletApp_Tests.csproj",
   "expectedPackageFiles": [
     "/Users/yulia/.nuget/packages/coverlet.collector/1.2.0/coverlet.collector.1.2.0.nupkg.sha512",
     "/Users/yulia/.nuget/packages/microsoft.codecoverage/16.5.0/microsoft.codecoverage.16.5.0.nupkg.sha512",

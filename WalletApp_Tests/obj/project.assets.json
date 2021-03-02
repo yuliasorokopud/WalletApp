@@ -3526,11 +3526,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/yulia/Downloads/WalletApp/WalletApp_Tests/WalletApp_Tests.csproj",
+      "projectUniqueName": "/Users/yulia/Documents/GitHub/WalletApp/WalletApp_Tests/WalletApp_Tests.csproj",
       "projectName": "WalletApp_Tests",
-      "projectPath": "/Users/yulia/Downloads/WalletApp/WalletApp_Tests/WalletApp_Tests.csproj",
+      "projectPath": "/Users/yulia/Documents/GitHub/WalletApp/WalletApp_Tests/WalletApp_Tests.csproj",
       "packagesPath": "/Users/yulia/.nuget/packages/",
-      "outputPath": "/Users/yulia/Downloads/WalletApp/WalletApp_Tests/obj/",
+      "outputPath": "/Users/yulia/Documents/GitHub/WalletApp/WalletApp_Tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/yulia/.config/NuGet/NuGet.Config"
@@ -3545,8 +3545,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "/Users/yulia/Downloads/WalletApp/WalletApp/WalletApp.csproj": {
-              "projectPath": "/Users/yulia/Downloads/WalletApp/WalletApp/WalletApp.csproj"
+            "/Users/yulia/Documents/GitHub/WalletApp/WalletApp/WalletApp.csproj": {
+              "projectPath": "/Users/yulia/Documents/GitHub/WalletApp/WalletApp/WalletApp.csproj"
             }
           }
         }

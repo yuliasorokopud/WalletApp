@@ -1,11 +1,13 @@
 ﻿<Properties StartupConfiguration="{D510FACC-BE2E-4EDB-AFD7-D3B9C9114D90}|Модульные тесты">
   <MonoDevelop.Ide.ItemProperties.WalletApp__Tests PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="WalletApp/Entities/Wallet.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WalletApp/Entities/User.cs">
     <Files>
       <File FileName="WalletApp/Entities/App.cs" Line="8" Column="11" />
-      <File FileName="WalletApp/Entities/Category.cs" Line="7" Column="12" />
-      <File FileName="WalletApp_Tests/UnitTest1.cs" Line="16" Column="41" />
-      <File FileName="WalletApp/Entities/Wallet.cs" Line="53" Column="36" />
+      <File FileName="WalletApp/Entities/Category.cs" Line="26" Column="35" />
+      <File FileName="WalletApp/Entities/Wallet.cs" Line="102" Column="42" />
+      <File FileName="WalletApp_Tests/WalletAppTests.cs" Line="216" Column="63" />
+      <File FileName="WalletApp/Entities/Transaction.cs" Line="54" Column="21" />
+      <File FileName="WalletApp/Entities/User.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,12 +15,15 @@
           <Node name="WalletApp" expanded="True">
             <Node name="WalletApp" expanded="True">
               <Node name="Entities" expanded="True">
-                <Node name="Wallet.cs" selected="True" />
+                <Node name="User.cs" selected="True" />
               </Node>
             </Node>
             <Node name="WalletApp_Tests" expanded="True" />
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

@@ -32,9 +32,15 @@ namespace WalletApp
         }
 
         //methods for working with wallets
-        public void addWallet(string name, string currency, string description, int start_value)
+        //public void addWallet(string name, string currency, string description, int start_value)
+        //{
+        //    _wallets.Add(new Wallet(name, currency, description, start_value));
+        //}
+
+        public void addWallet(Wallet wallet)
         {
-            _wallets.Add(new Wallet(name, currency, description, start_value));
+            if (!_wallets.Contains(wallet))
+                _wallets.Add(wallet) ;
         }
 
         /*public void deleteWallet(string name)
@@ -42,8 +48,14 @@ namespace WalletApp
             _wallets.Remove(Wallet(name, currency, description, start_value));
         }*/
 
-        //getters & setters
-        public string Name
+        public void removeWallet(Wallet wallet)
+        {
+            if (_wallets.Contains(wallet))
+                _wallets.Remove(wallet) ;
+        }
+
+    //getters & setters
+    public string Name
         {
             get { return _name; }
             private set { _name = value; }
@@ -61,11 +73,11 @@ namespace WalletApp
             private set { _email = value; }
         }
 
-        /*public List<Wallet> Wallets
+        public List<Wallet> Wallets
         {
             get { return _wallets; }
             private set { _wallets = value; }
-        }*/
+        }
 
     }
 }

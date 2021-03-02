@@ -16,3 +16,12 @@ C:/Users/Nastya/Desktop/C#/WalletApp/WalletApp/obj/Debug/netstandard2.0/WalletAp
 /Users/yulia/Downloads/WalletApp/WalletApp/obj/Debug/netstandard2.0/WalletApp.csproj.CoreCompileInputs.cache
 /Users/yulia/Downloads/WalletApp/WalletApp/obj/Debug/netstandard2.0/WalletApp.dll
 /Users/yulia/Downloads/WalletApp/WalletApp/obj/Debug/netstandard2.0/WalletApp.pdb
+/Users/yulia/Documents/GitHub/WalletApp/WalletApp/bin/Debug/netstandard2.0/WalletApp.deps.json
+/Users/yulia/Documents/GitHub/WalletApp/WalletApp/bin/Debug/netstandard2.0/WalletApp.dll
+/Users/yulia/Documents/GitHub/WalletApp/WalletApp/bin/Debug/netstandard2.0/WalletApp.pdb
+/Users/yulia/Documents/GitHub/WalletApp/WalletApp/obj/Debug/netstandard2.0/WalletApp.csprojAssemblyReference.cache
+/Users/yulia/Documents/GitHub/WalletApp/WalletApp/obj/Debug/netstandard2.0/WalletApp.AssemblyInfoInputs.cache
+/Users/yulia/Documents/GitHub/WalletApp/WalletApp/obj/Debug/netstandard2.0/WalletApp.AssemblyInfo.cs
+/Users/yulia/Documents/GitHub/WalletApp/WalletApp/obj/Debug/netstandard2.0/WalletApp.csproj.CoreCompileInputs.cache
+/Users/yulia/Documents/GitHub/WalletApp/WalletApp/obj/Debug/netstandard2.0/WalletApp.dll
+/Users/yulia/Documents/GitHub/WalletApp/WalletApp/obj/Debug/netstandard2.0/WalletApp.pdb

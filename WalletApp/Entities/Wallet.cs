@@ -53,6 +53,7 @@ namespace WalletApp
         public void add_transaction(Transaction transaction)
         {
             _transactions.Add(transaction);
+            add_category(transaction.Category);
             _current_value += transaction.Value;
         }
 
@@ -64,7 +65,8 @@ namespace WalletApp
 
         public void remove_category(Category category) //?? the method depends on UI logic, might be changed later
         {
-            _categories.Remove(category);
+            if (_categories.Contains(category))
+                _categories.Remove(category);
         }
 
         public void remove_transaction(Transaction transaction) //?? the method depends on UI logic, might be changed later
@@ -97,7 +99,7 @@ namespace WalletApp
              _transactions[i].edit_description(description);
         }
 
-        public void edit_date(int i, string date)
+        public void edit_transaction_date(int i, string date)
         {
             _transactions[i].edit_date(date);
         }
@@ -127,10 +129,22 @@ namespace WalletApp
             private set { _start_value = value; }
         }
 
+        public int CurrentValue
+        {
+            get { return _current_value; }
+            private set { _current_value = value; }
+       }
+
         public List<Category> Categories
         {
             get { return _categories; }
             private set { _categories = value; }
+        }
+
+        public List<Transaction> Transactions
+        {
+            get { return _transactions; }
+            private set { _transactions = value; }
         }
 
 
