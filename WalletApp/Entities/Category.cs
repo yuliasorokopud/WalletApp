@@ -9,7 +9,7 @@ namespace WalletApp
         private string _name;
         private string _description;
         private string _color; //name or value (rgb, hsl, hex etc.) - variable type may be changed later
-        private string _icon_path; //path to icon file - variable type may be changed later
+        private string _icon_path; //TODO: path to icon file - variable type may be changed later
 
         //constructors
         public Category()
@@ -20,7 +20,7 @@ namespace WalletApp
             _icon_path = "C:\\Users\\Nastya\\Desktop\\C#\\WalletApp\\WalletApp\\files\\noun_sparkle_2595966.png";
         }
 
-        public Category(string name, string description, string color, string icon_path)
+        public Category(string name, string description, string icon_path, string color = "#03d3fc")
         {
             _name = name;
             _description = description;

@@ -7,24 +7,33 @@ namespace WalletApp
 {
     public class Transaction
     {
-        private int _value;
-        private string _currency;
+        private double _value;
+        private Currencies _currency;
         private Category _category;
         private string _description;
-        private string _date; // variable type may be changed later
+        private DateTime _date;
         private string _file_path;
 
         //constructors
         public Transaction()
         {
             _value = 1;
-            _currency = "UAH";
+            _currency = Currencies.UAH;
             Category = new Category();
             _description = "Default transaction";
-            _date = "28.02.2021";
+            _date = DateTime.Now;
         }
 
-        public Transaction(int value, string currency, Category category, string description, string date)
+        public Transaction(double value, Currencies currency, Category category, string description = "Default transaction")
+        {
+            _value = value;
+            _currency = currency;
+            Category = category;
+            _description = description;
+            _date = DateTime.Now;
+        }
+
+        public Transaction(double value, Currencies currency, Category category, DateTime date, string description = "Default transaction")
         {
             _value = value;
             _currency = currency;
@@ -33,22 +42,25 @@ namespace WalletApp
             _date = date;
         }
 
+    
         //methods working with the transaction
         public void add_file(string file_path)
         {
             _file_path = file_path;
-            //... add later what needs to be done for adding file
+            //TODO: ... add later what needs to be done for adding file
         }
 
-        public void edit_value(int value)
+        public void edit_value(double value)
         {
             this.Value = value;
         }
 
-        public void edit_currency(string currency)
+        public void edit_currency(Currencies currency)
         {
+            edit_value(convertValue(currency));
             this.Currency = currency;
-            //add code for changing value properly
+            
+            //TODO: add code for changing value properly
         }
 
         public void edit_category(Category category)
@@ -61,19 +73,61 @@ namespace WalletApp
             this.Description = description;
         }
 
-        public void edit_date(string date)
+        public void edit_date(DateTime date)
         {
             this.Date = date;
         }
 
+        public double convertValue(Currencies toCurrency)
+        {
+            switch(this.Currency){
+                case Currencies.UAH:
+                    switch (toCurrency)
+                    {
+                        case Currencies.USD: return Math.Round(Value / 28, 2);
+                        case Currencies.EURO: return Math.Round(Value / 32, 2);
+                        default:
+                            Console.WriteLine("Default case1");
+                            break;
+                    }
+                    break;
+                case Currencies.USD:
+                    switch (toCurrency)
+                    {
+                        case Currencies.UAH: return Math.Round(Value * 28,2);
+                        case Currencies.EURO: return Math.Round(Value * 0.842);
+                        default:
+                            Console.WriteLine("Default case2");
+                            break;
+                    }
+                    break;
+                case Currencies.EURO:
+                    switch (toCurrency)
+                    {
+                        case Currencies.USD: return Math.Round(Value * 1.19, 2);
+                        case Currencies.UAH: return Math.Round(Value * 32,2);
+                        default:
+                            Console.WriteLine("Default case3");
+                            break;
+                    }
+                    break;
+                default:
+                    Console.WriteLine("Default case4");
+                    break;
+            }
+            Console.WriteLine("No match");
+            return 0;
+        }
+
+
         //getters & setters
-        public int Value
+        public double Value
         {
             get { return _value; }
             private set { _value = value; }
         }
 
-        public string Currency
+        public Currencies Currency
         {
             get { return _currency; }
             private set { _currency = value; }
@@ -93,10 +147,17 @@ namespace WalletApp
         }
 
 
-        public string Date
+        public DateTime Date
         {
             get { return _date; }
             private set { _date = value; }
         }
+    }
+
+    public enum Currencies
+    {
+        UAH = 1,
+        USD = 2,
+        EURO = 3
     }
 }

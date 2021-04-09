@@ -8,42 +8,23 @@ namespace WalletApp
     public class Wallet
     {
         private string _name;
-        private string _currency;
+        private Currencies _currency;
         private string _description;
-        private int _start_value; //how much money we put in the wallet when we create it
+        private double _start_value;           //how much money we put in the wallet when we create it
         private List<Category> _categories; //the categories we can use in this wallet
-        private int _current_value;
+        private double _current_value;
         private List<Transaction> _transactions;
 
 
-        //constructors
-        /*public Wallet()
-        {
-            _name = "My wallet";
-            _currency = "UAH";
-            _description = "default wallet";
-            _start_value = 0;
-            _categories = new List<Category>();
-            _transactions = new List<Transaction>();
-        }
+        //contructor
 
-        public Wallet(string name)
-        {
-            _name = name;
-            _currency = "UAH";
-            _description = "default wallet";
-            _start_value = 0;
-            _categories = new List<Category>();
-            _transactions = new List<Transaction>();
-        }*/
-
-        public Wallet(string name, string currency, string description, int start_value)
+        public Wallet(string name, Currencies currency, int start_value, string description = "default wallet")
         {
             _name = name;
             _currency = currency;
             _description = description;
             _start_value = start_value;
-            _categories = new List<Category>();
+            _categories = new List<Category>() { new Category()};
             _transactions = new List<Transaction>();
             _current_value = start_value;
         }
@@ -52,24 +33,81 @@ namespace WalletApp
 
         public void add_transaction(Transaction transaction)
         {
-            _transactions.Add(transaction);
-            add_category(transaction.Category);
-            _current_value += transaction.Value;
+            if (Categories.Contains(transaction.Category))
+            {
+                addTransaction(transaction);
+            }
+           ;
         }
 
+        public void add_transaction(int value, Category category)
+        {
+            if (Categories.Contains(category))
+            {
+                Transaction transaction = new Transaction(value, this.WCurrency, category);
+                addTransaction(transaction);
+            }
+        }
+
+        public void add_transaction(int value, Currencies currency, Category category, string description = "Default transaction")
+        {
+            if (Categories.Contains(category))
+            {
+                Transaction transaction = new Transaction(value, currency, category, DateTime.Now, description);
+                addTransaction(transaction);
+            }
+        }
+
+        public void add_transaction(int value, Currencies currency, Category category, DateTime date, string description = "Default transaction")
+        {
+            if (Categories.Contains(category))
+            {
+                Transaction transaction = new Transaction(value, currency, category, date, description);
+                _transactions.Add(transaction);
+                addTransaction(transaction);
+            }
+        }
+
+     
         public void add_category(Category category)
         {
-            if (!_categories.Contains(category))
+            if (!Categories.Contains(category))
             _categories.Add(category);
         }
+        
 
-        public void remove_category(Category category) //?? the method depends on UI logic, might be changed later
+        //helper
+        private void addTransaction(Transaction transaction)
         {
-            if (_categories.Contains(category))
-                _categories.Remove(category);
+            _transactions.Add(transaction);
+            if (transaction.Currency != this.WCurrency)
+            {
+                var newValue = transaction.convertValue(this.WCurrency);
+                _current_value += newValue;
+            }
+            else
+            {
+                _current_value += transaction.Value;
+            }
         }
 
-        public void remove_transaction(Transaction transaction) //?? the method depends on UI logic, might be changed later
+
+        //TODO: the method depends on UI logic, might be changed later
+        public void remove_category(Category category) 
+        {
+            if (_categories.Contains(category))
+                foreach(var trans in Transactions)
+                {
+                    if (trans.Category == category)
+                    {
+                        trans.edit_category(Categories[0]);
+                    }
+                }
+               _categories.Remove(category);
+        }
+
+        //TODO: the method depends on UI logic, might be changed later
+        public void remove_transaction(Transaction transaction) 
         {
             _transactions.Remove(transaction);
             _current_value -= transaction.Value;
@@ -82,36 +120,36 @@ namespace WalletApp
             _current_value += _transactions[i].Value;
         }
 
-        public void edit_transaction_currency(int i, string currency)
+        
+        public void edit_transaction_currency(int i, Currencies currency)
         {
             _transactions[i].edit_currency(currency);
-            //add code for changing value properly
         }
 
         public void edit_transaction_category(int i, Category category)
         {
-            if(_categories.Contains(category))  //the transaction can have only a category from the wallet categories
-            _transactions[i].edit_category(category);
+            if(_categories.Contains(category))
+               _transactions[i].edit_category(category);
         }
 
         public void edit_transaction_description(int i, string description)
         {
-             _transactions[i].edit_description(description);
+            _transactions[i].edit_description(description);
         }
 
-        public void edit_transaction_date(int i, string date)
+        public void edit_transaction_date(int i, DateTime date)
         {
-            _transactions[i].edit_date(date);
+             _transactions[i].edit_date(date);
         }
 
-        //getters & setters
+        // getters & setters
         public string Name
         {
             get { return _name; }
             private set { _name = value; }
         }
 
-        public string Currency
+        public Currencies WCurrency
         {
             get { return _currency; }
             private set { _currency = value; }
@@ -123,17 +161,17 @@ namespace WalletApp
             private set { _description = value; }
         }
 
-        public int StartValue
+        public double StartValue
         {
             get { return _start_value; }
             private set { _start_value = value; }
         }
 
-        public int CurrentValue
+        public double CurrentValue
         {
             get { return _current_value; }
             private set { _current_value = value; }
-       }
+        }
 
         public List<Category> Categories
         {
@@ -147,6 +185,5 @@ namespace WalletApp
             private set { _transactions = value; }
         }
 
-
-    }
+        }
 }

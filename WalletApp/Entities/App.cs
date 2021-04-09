@@ -17,7 +17,7 @@ namespace WalletApp.Entities
         static void Main(string[] args)
         {
             App app = new App();
-            app.Users.Add(new User());
+            //app.Users.Add(new User("User", "Userovich", "user@gmail.com"));
         }
 
         public List<User> Users
