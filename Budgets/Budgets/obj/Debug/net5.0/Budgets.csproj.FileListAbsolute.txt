@@ -1,0 +1,16 @@
+C:\Users\Оленка\Downloads\Telegram Desktop\Budgets\Budgets\bin\Debug\net5.0\Budgets.exe
+C:\Users\Оленка\Downloads\Telegram Desktop\Budgets\Budgets\bin\Debug\net5.0\Budgets.deps.json
+C:\Users\Оленка\Downloads\Telegram Desktop\Budgets\Budgets\bin\Debug\net5.0\Budgets.runtimeconfig.json
+C:\Users\Оленка\Downloads\Telegram Desktop\Budgets\Budgets\bin\Debug\net5.0\Budgets.runtimeconfig.dev.json
+C:\Users\Оленка\Downloads\Telegram Desktop\Budgets\Budgets\bin\Debug\net5.0\Budgets.dll
+C:\Users\Оленка\Downloads\Telegram Desktop\Budgets\Budgets\bin\Debug\net5.0\ref\Budgets.dll
+C:\Users\Оленка\Downloads\Telegram Desktop\Budgets\Budgets\bin\Debug\net5.0\Budgets.pdb
+C:\Users\Оленка\Downloads\Telegram Desktop\Budgets\Budgets\obj\Debug\net5.0\Budgets.csprojAssemblyReference.cache
+C:\Users\Оленка\Downloads\Telegram Desktop\Budgets\Budgets\obj\Debug\net5.0\Budgets.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Оленка\Downloads\Telegram Desktop\Budgets\Budgets\obj\Debug\net5.0\Budgets.AssemblyInfoInputs.cache
+C:\Users\Оленка\Downloads\Telegram Desktop\Budgets\Budgets\obj\Debug\net5.0\Budgets.AssemblyInfo.cs
+C:\Users\Оленка\Downloads\Telegram Desktop\Budgets\Budgets\obj\Debug\net5.0\Budgets.csproj.CoreCompileInputs.cache
+C:\Users\Оленка\Downloads\Telegram Desktop\Budgets\Budgets\obj\Debug\net5.0\Budgets.dll
+C:\Users\Оленка\Downloads\Telegram Desktop\Budgets\Budgets\obj\Debug\net5.0\ref\Budgets.dll
+C:\Users\Оленка\Downloads\Telegram Desktop\Budgets\Budgets\obj\Debug\net5.0\Budgets.pdb
+C:\Users\Оленка\Downloads\Telegram Desktop\Budgets\Budgets\obj\Debug\net5.0\Budgets.genruntimeconfig.cache

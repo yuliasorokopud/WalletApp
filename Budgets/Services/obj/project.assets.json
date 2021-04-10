@@ -1,0 +1,113 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "AV.ProgrammingWithCSharp.Budgets.DataStorage/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/AV.ProgrammingWithCSharp.Budgets.DataStorage.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AV.ProgrammingWithCSharp.Budgets.DataStorage.dll": {}
+        }
+      },
+      "AV.ProgrammingWithCSharp.Budgets.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "AV.ProgrammingWithCSharp.Budgets.DataStorage": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AV.ProgrammingWithCSharp.Budgets.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AV.ProgrammingWithCSharp.Budgets.Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AV.ProgrammingWithCSharp.Budgets.DataStorage/1.0.0": {
+      "type": "project",
+      "path": "../DataStorage/DataStorage.csproj",
+      "msbuildProject": "../DataStorage/DataStorage.csproj"
+    },
+    "AV.ProgrammingWithCSharp.Budgets.Models/1.0.0": {
+      "type": "project",
+      "path": "../Models/Models.csproj",
+      "msbuildProject": "../Models/Models.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "AV.ProgrammingWithCSharp.Budgets.Models >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Оленка\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Оленка\\Downloads\\Telegram Desktop\\Budgets\\Services\\Services.csproj",
+      "projectName": "AV.ProgrammingWithCSharp.Budgets.Services",
+      "projectPath": "C:\\Users\\Оленка\\Downloads\\Telegram Desktop\\Budgets\\Services\\Services.csproj",
+      "packagesPath": "C:\\Users\\Оленка\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Оленка\\Downloads\\Telegram Desktop\\Budgets\\Services\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Оленка\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "C:\\Users\\Оленка\\Downloads\\Telegram Desktop\\Budgets\\Models\\Models.csproj": {
+              "projectPath": "C:\\Users\\Оленка\\Downloads\\Telegram Desktop\\Budgets\\Models\\Models.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

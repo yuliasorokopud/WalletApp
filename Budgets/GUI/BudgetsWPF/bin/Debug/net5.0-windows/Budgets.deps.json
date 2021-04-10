@@ -1,0 +1,79 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Budgets/1.0.0": {
+        "dependencies": {
+          "AV.ProgrammingWithCSharp.Budgets.Models": "1.0.0",
+          "AV.ProgrammingWithCSharp.Budgets.Services": "1.0.0",
+          "Prism.Core": "8.0.0.1909"
+        },
+        "runtime": {
+          "Budgets.dll": {}
+        }
+      },
+      "Prism.Core/8.0.0.1909": {
+        "runtime": {
+          "lib/netstandard2.0/Prism.dll": {
+            "assemblyVersion": "8.0.0.1909",
+            "fileVersion": "8.0.0.1909"
+          }
+        }
+      },
+      "AV.ProgrammingWithCSharp.Budgets.DataStorage/1.0.0": {
+        "runtime": {
+          "AV.ProgrammingWithCSharp.Budgets.DataStorage.dll": {}
+        }
+      },
+      "AV.ProgrammingWithCSharp.Budgets.Models/1.0.0": {
+        "dependencies": {
+          "AV.ProgrammingWithCSharp.Budgets.DataStorage": "1.0.0"
+        },
+        "runtime": {
+          "AV.ProgrammingWithCSharp.Budgets.Models.dll": {}
+        }
+      },
+      "AV.ProgrammingWithCSharp.Budgets.Services/1.0.0": {
+        "dependencies": {
+          "AV.ProgrammingWithCSharp.Budgets.Models": "1.0.0"
+        },
+        "runtime": {
+          "AV.ProgrammingWithCSharp.Budgets.Services.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Budgets/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Prism.Core/8.0.0.1909": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Ri+iSFvJiSKYdui7qtxi3uH9NImSZ8Jl/nOosxScSJseFwAc8Lz63JLXoqSAQglcX13DzZcAMzpKNuA9rCFiJg==",
+      "path": "prism.core/8.0.0.1909",
+      "hashPath": "prism.core.8.0.0.1909.nupkg.sha512"
+    },
+    "AV.ProgrammingWithCSharp.Budgets.DataStorage/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AV.ProgrammingWithCSharp.Budgets.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AV.ProgrammingWithCSharp.Budgets.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,17 @@
+C:\Users\Оленка\Downloads\Telegram Desktop\Budgets\Services\bin\Debug\net5.0\AV.ProgrammingWithCSharp.Budgets.Services.deps.json
+C:\Users\Оленка\Downloads\Telegram Desktop\Budgets\Services\bin\Debug\net5.0\AV.ProgrammingWithCSharp.Budgets.Services.dll
+C:\Users\Оленка\Downloads\Telegram Desktop\Budgets\Services\bin\Debug\net5.0\ref\AV.ProgrammingWithCSharp.Budgets.Services.dll
+C:\Users\Оленка\Downloads\Telegram Desktop\Budgets\Services\bin\Debug\net5.0\AV.ProgrammingWithCSharp.Budgets.Services.pdb
+C:\Users\Оленка\Downloads\Telegram Desktop\Budgets\Services\bin\Debug\net5.0\AV.ProgrammingWithCSharp.Budgets.DataStorage.dll
+C:\Users\Оленка\Downloads\Telegram Desktop\Budgets\Services\bin\Debug\net5.0\AV.ProgrammingWithCSharp.Budgets.Models.dll
+C:\Users\Оленка\Downloads\Telegram Desktop\Budgets\Services\bin\Debug\net5.0\AV.ProgrammingWithCSharp.Budgets.Models.pdb
+C:\Users\Оленка\Downloads\Telegram Desktop\Budgets\Services\bin\Debug\net5.0\AV.ProgrammingWithCSharp.Budgets.DataStorage.pdb
+C:\Users\Оленка\Downloads\Telegram Desktop\Budgets\Services\obj\Debug\net5.0\Services.csprojAssemblyReference.cache
+C:\Users\Оленка\Downloads\Telegram Desktop\Budgets\Services\obj\Debug\net5.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Оленка\Downloads\Telegram Desktop\Budgets\Services\obj\Debug\net5.0\Services.AssemblyInfoInputs.cache
+C:\Users\Оленка\Downloads\Telegram Desktop\Budgets\Services\obj\Debug\net5.0\Services.AssemblyInfo.cs
+C:\Users\Оленка\Downloads\Telegram Desktop\Budgets\Services\obj\Debug\net5.0\Services.csproj.CoreCompileInputs.cache
+C:\Users\Оленка\Downloads\Telegram Desktop\Budgets\Services\obj\Debug\net5.0\Services.csproj.CopyComplete
+C:\Users\Оленка\Downloads\Telegram Desktop\Budgets\Services\obj\Debug\net5.0\AV.ProgrammingWithCSharp.Budgets.Services.dll
+C:\Users\Оленка\Downloads\Telegram Desktop\Budgets\Services\obj\Debug\net5.0\ref\AV.ProgrammingWithCSharp.Budgets.Services.dll
+C:\Users\Оленка\Downloads\Telegram Desktop\Budgets\Services\obj\Debug\net5.0\AV.ProgrammingWithCSharp.Budgets.Services.pdb
