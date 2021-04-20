@@ -1,0 +1,108 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "WalletAppWPF.DataStorage/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/WalletAppWPF.DataStorage.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WalletAppWPF.DataStorage.dll": {}
+        }
+      },
+      "WalletAppWPF.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "WalletAppWPF.DataStorage": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/WalletAppWPF.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WalletAppWPF.Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WalletAppWPF.DataStorage/1.0.0": {
+      "type": "project",
+      "path": "../DataStorage/DataStorage.csproj",
+      "msbuildProject": "../DataStorage/DataStorage.csproj"
+    },
+    "WalletAppWPF.Models/1.0.0": {
+      "type": "project",
+      "path": "../Models/Models.csproj",
+      "msbuildProject": "../Models/Models.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "WalletAppWPF.Models >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Nastya\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Nastya\\Desktop\\C#\\NewWalletApp\\Services\\Services.csproj",
+      "projectName": "WalletAppWPF.Services",
+      "projectPath": "C:\\Users\\Nastya\\Desktop\\C#\\NewWalletApp\\Services\\Services.csproj",
+      "packagesPath": "C:\\Users\\Nastya\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Nastya\\Desktop\\C#\\NewWalletApp\\Services\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Nastya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "C:\\Users\\Nastya\\Desktop\\C#\\NewWalletApp\\Models\\Models.csproj": {
+              "projectPath": "C:\\Users\\Nastya\\Desktop\\C#\\NewWalletApp\\Models\\Models.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

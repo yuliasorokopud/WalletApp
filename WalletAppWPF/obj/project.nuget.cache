@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "3fnfo1/AgaT4HIY/6SUkEDDc+3Wgn0lQk4zkDTc3EHz2Z9MVGW8xgsr6uQ5bDFYxMO7h38Pb2k1+Ff4HVC9J6A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Nastya\\Desktop\\C#\\NewWalletApp\\WalletAppWPF\\WalletAppWPF.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Nastya\\.nuget\\packages\\prism.core\\8.0.0.1909\\prism.core.8.0.0.1909.nupkg.sha512"
+  ],
+  "logs": []
+}

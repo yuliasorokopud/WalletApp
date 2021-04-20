@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Prism.Core" Version="8.0.0.1909" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Models\Models.csproj" />
+    <ProjectReference Include="..\Services\Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="View\Authentication\AuthView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Authentication\SignInView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Authentication\SignUpView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Transaction\TransactionCreationView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Transaction\TransactionDelitionView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Transaction\TransactionDetailsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Transaction\TransactionsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Wallet\WalletCreationView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Wallet\WalletDelitionView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Wallet\WalletDetailsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Wallet\WalletsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
+</Project>

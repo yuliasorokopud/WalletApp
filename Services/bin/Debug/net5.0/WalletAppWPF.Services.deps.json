@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "WalletAppWPF.Services/1.0.0": {
+        "dependencies": {
+          "WalletAppWPF.Models": "1.0.0"
+        },
+        "runtime": {
+          "WalletAppWPF.Services.dll": {}
+        }
+      },
+      "WalletAppWPF.DataStorage/1.0.0": {
+        "runtime": {
+          "WalletAppWPF.DataStorage.dll": {}
+        }
+      },
+      "WalletAppWPF.Models/1.0.0": {
+        "dependencies": {
+          "WalletAppWPF.DataStorage": "1.0.0"
+        },
+        "runtime": {
+          "WalletAppWPF.Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WalletAppWPF.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WalletAppWPF.DataStorage/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WalletAppWPF.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

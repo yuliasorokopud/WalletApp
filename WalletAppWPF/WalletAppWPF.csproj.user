@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Header.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MainView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Header.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AuthView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\SignInView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\SignUpView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\TransactionCreationView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\TransactionDelitionView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\TransactionDetailsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\TransactionsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\WalletCreationView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\WalletDelitionView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\WalletDetailsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\WalletsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
